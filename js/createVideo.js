@@ -11,8 +11,10 @@ async function createVideo(evento){
 
     const descripcion = Math.floor(Math.random*10).toString();
 
-    await conexionApi.enviarVideo(titulo,descripcion,url,imagen);
+    await conexionApi.enviarVideo(titulo,descripcion,url,imagen)
     window.location.href="../pages/send-finished.html";
+    
+    
 }
 
 form.addEventListener("submit", evento => createVideo(evento));

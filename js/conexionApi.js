@@ -1,3 +1,4 @@
+
 async function listVideos(){
   const conexion  =await fetch("http://localhost:3001/videos");  
   const conexionParse = conexion.json();
@@ -17,12 +18,19 @@ async function listVideos(){
         })
 
     })
+    
     const conexionParse = conexion.json();
     return conexionParse;
  }
 
+ async function buscarVideo(palabra){
+    const  conexion = await fetch(`http://localhost:3001/videos?q=${palabra}`);
+    const conexionParse = conexion.json();
+    return conexionParse
+ }
+
 export const conexionApi ={
-    listVideos, enviarVideo
+    listVideos, enviarVideo, buscarVideo
 }
 
-listVideos()
+// listVideos()

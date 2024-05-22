@@ -45,6 +45,7 @@ body {
     font-size: 16px;
     padding: 3px 8px;
     border: 1px solid rgb(211, 211, 211);
+    color: var(--azul-oscuro);
 }
 
 .buscar__label {
@@ -54,8 +55,11 @@ body {
     border: 1px solid rgb(211, 211, 211);
     background-color: #F9F9F9;
     border-left: none;
-    padding: 8px 18px 5px;
+    padding: 1px 1px 10px 1px; 
     cursor: pointer;
+    width: 32px;
+    height: 32px;
+
 }
 
 .header__audio {
@@ -249,6 +253,23 @@ body {
     font-weight: bold;
     padding: 10px 0 20px 0;
 }
+
+.videos__container {
+    color: black;
+}
+
+.mensaje {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: black;
+    font-size: 2rem;
+}
+.mensaje__imagen {
+    width: 30%;
+}
+
 
 @media(min-width: 834px) {
 
