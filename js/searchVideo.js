@@ -3,7 +3,7 @@ import { conexionApi } from "./conexionApi.js";
 
 async function filtrarVideo(evento){
     evento.preventDefault();
-    const dataSearch = document.querySelector('[data-search]').value;
+    const dataSearch = document.querySelector("[data-search]").value;
     const busqueda = conexionApi.buscarVideo(dataSearch);
     console.log(busqueda);
 }

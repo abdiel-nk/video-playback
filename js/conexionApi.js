@@ -1,6 +1,6 @@
 
 async function listVideos(){
-  const conexion  =await fetch("http://localhost:3001/videos");  
+  const conexion  = await fetch("http://localhost:3001/videos");  
   const conexionParse = conexion.json();
   return conexionParse
 //   console.log(conexionParse);

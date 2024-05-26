@@ -8,7 +8,7 @@ function crearCard(titulo, descripcion, url, imagen){
     video.innerHTML = `<iframe  width="100%"  height="72%" src="${url}" 
     title="${titulo}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="descripcion-video">
-        <img src="./img/favicon.ico" alt="Logo">
+        <img src="${imagen}" alt="Logo">
         <div class="detalles__video">
             <h3>${titulo}</h3>
             <p>${descripcion}</p>
