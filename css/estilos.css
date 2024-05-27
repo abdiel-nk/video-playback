@@ -214,7 +214,11 @@ body {
 }
 
 /* SECCIÓN VÍDEOS */
-
+.mensaje__titulo{
+    font-size: 3rem;
+    color: var(--gris-texto);
+    padding: 5rem;
+}
 .videos__container {
     color: black;
     padding: 153px 20px 10px 20px;
@@ -316,6 +320,7 @@ body {
     .footer__container {
         height: 420px;
         padding-left: 74px;
+
     }
 
 }
@@ -346,6 +351,7 @@ body {
     .footer__container {
         padding-left: 240px;
         height: 225px;
+        bottom: 0;
     }
 
 }
