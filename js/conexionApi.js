@@ -19,6 +19,9 @@ async function listVideos(){
     })
     
     const conexionParse = conexion.json();
+    if(!conexionParse.ok){
+        throw new Error("Ha ocurrido un error al enviar el video");
+    }
     return conexionParse;
  }
 
