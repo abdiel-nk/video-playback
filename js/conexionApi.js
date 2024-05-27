@@ -1,13 +1,13 @@
 
 async function listVideos(){
-  const conexion  = await fetch("http://localhost:3001/videos");  
+  const conexion  = await fetch("http://localhost:3000/videos");  
   const conexionParse = conexion.json();
   return conexionParse
 //   console.log(conexionParse);
 }
 
  async function enviarVideo (titulo, descripcion, url, imagen){
-    const  conexion = await fetch("http://localhost:3001/videos", {
+    const  conexion = await fetch("http://localhost:3000/videos", {
         method: "POST",
         headers:{"Content-type": "application/json"},
         body:JSON.stringify({
@@ -16,7 +16,6 @@ async function listVideos(){
             url:url,
             imagen:imagen
         })
-
     })
     
     const conexionParse = conexion.json();
@@ -24,7 +23,7 @@ async function listVideos(){
  }
 
  async function buscarVideo(palabra){
-    const  conexion = await fetch(`http://localhost:3001/videos?q=${palabra}`);
+    const  conexion = await fetch(`http://localhost:3000/videos?q=${palabra}`);
     const conexionParse = conexion.json();
     return conexionParse
  }

@@ -2,7 +2,7 @@ import { conexionApi } from "./conexionApi.js";
 
 const list = document.querySelector("[data-list]")
 
-function crearCard(titulo, descripcion, url, imagen){
+export default function crearCard(titulo, descripcion, url, imagen){
     const video = document.createElement("li");
     video.className="videos__item";
     video.innerHTML = `<iframe  width="100%"  height="72%" src="${url}" 
