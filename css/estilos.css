@@ -219,6 +219,9 @@ body {
     color: var(--gris-texto);
     padding: 5rem;
 }
+.mensaje__titulo span{
+    font-weight: bold;
+}
 .videos__container {
     color: black;
     padding: 153px 20px 10px 20px;

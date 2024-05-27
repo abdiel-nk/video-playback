@@ -14,6 +14,22 @@ async function filtrarVideo(evento){
 
     busqueda.forEach(video=> lista.appendChild(crearCard(video.titulo,video.descripcion,video.url,video.imagen)));
     console.log(busqueda);
+    
+    if(busqueda.length==0){
+        lista.innerHTML= `<h2 class="mensaje__titulo">No se encontraron elementos para <span> "${dataSearch}" </span></h2>`
+    }
 }
+//search button
 const button = document.querySelector("[data-button-search]");
 button.addEventListener("click",evento=>filtrarVideo(evento))
+
+//search enter
+var  buscar =document.getElementById('buscar');
+buscar.addEventListener('keyup', function(e){
+    var key = e.which || e.keyCode;
+    if(key ==13){
+        filtrarVideo(e)
+
+    }
+    console.log(e);
+})

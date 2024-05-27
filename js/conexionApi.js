@@ -12,14 +12,14 @@ async function listVideos(){
         headers:{"Content-type": "application/json"},
         body:JSON.stringify({
             titulo:titulo,
-            descripcion:`${descripcion} mil visualizaciones`,
+            descripcion:`${descripcion}mil visualizaciones`,
             url:url,
             imagen:imagen
         })
     })
     
     const conexionParse = conexion.json();
-    if(!conexionParse.ok){
+    if(!conexion.ok){
         throw new Error("Ha ocurrido un error al enviar el video");
     }
     return conexionParse;
